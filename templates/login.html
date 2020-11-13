@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Giriş Yap </h3>
+<hr>
+<div class = "jumbotron text-center">
+{% from "includes/formhelpers.html" import render_field %}
+<form method = "post">
+    {{ render_field(form.username) }}
+    {{ render_field(form.password) }}
+    <button type="submit" class="btn btn-outline-success"">Giriş Yap</button>
+    <div class="form-check">
+</form>
+<body style = "background: url(https://cdn.suwalls.com/wallpapers/abstract/polygon-texture-26717-2560x1600.jpg)">
+</body>
+</div>
+{% endblock body %}
+
+

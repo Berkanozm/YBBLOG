@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<h3>Kayıt Olun</h3>
+<hr>
+<div class = "jumbotron text-center">
+<form method = "post">
+    {{ render_field(form.name,class ="form") }}
+    {{ render_field(form.username,class ="form") }}
+    {{ render_field(form.email,class ="form") }}
+    {{ render_field(form.password,class ="form") }}
+    {{ render_field(form.confirm,class ="form") }}
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    <h5>Kuralları ve koşulları onaylıyorum.</h5>
+  </label>
+</div>
+    <button type="submit" class="btn btn-outline-success">Onayla</button>
+</form>
+<body style = "background: url(https://cdn.suwalls.com/wallpapers/abstract/polygon-texture-26717-2560x1600.jpg)">
+</body>
+</div>
+
+
+
+
+
+{% endblock body %}
